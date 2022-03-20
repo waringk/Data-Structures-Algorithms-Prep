@@ -1,0 +1,13 @@
+Given a number, return the next smallest prime number
+
+def next_prime(num):
+  if num < 2:
+    return 2
+  i = 2
+  while True:
+    num = num+1
+    if num % i != 0:
+      return num
+    i+=1
+
+print(next_prime(10))
