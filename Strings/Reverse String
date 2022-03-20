@@ -2,7 +2,7 @@ Reverse String
 
 https://leetcode.com/problems/reverse-string/
 
-Two Pointers
+Two Pointers, Reverses an array of characters in place
 
 class Solution(object):
     def reverseString(self, s):
