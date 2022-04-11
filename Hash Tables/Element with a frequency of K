@@ -1,0 +1,24 @@
+Problem 1 - Element with a frequency of K
+
+Create a hash map
+Iterate over the array
+If the element is not already in the array, add it, and put 1 in the element count
+If the element is in the array, increment the element count
+
+Loop over the hash map and look for the key/value pair with k=value
+If we found a match, return it
+(Loop over the entire array if multiple outputs are required for all matches of k)
+Otherwise return None
+
+
+Input: [1, 2, 3, 2, 1, 2, 3, 2, 1], k = 2 
+Output: 3
+
+Input: [1, 2, 3], k = 3
+Output: null 
+
+Input: [1, 2, 2, 1, 4, 5], k = 2
+Output: 1 or 2 
+
+Input: [], k = 2 
+Output: null 
