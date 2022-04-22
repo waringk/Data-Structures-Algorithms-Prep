@@ -1,0 +1,39 @@
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        
+        None (1)->(2)->(3)->(4)->(5)-> None
+        create a pointer for the cur node
+        create a pointer for the _next node
+        create a pointer for the prev node
+        
+        prev should point to None
+        cur should point to the head        
+        
+        while the current node is not None:
+        move _next forward a node
+        flip cur.next
+        move prev forward a node
+        move cur forward a node
+        
+        
+        """
+        
+        cur = head
+        prev = None
+        
+        while cur:
+            _next = cur.next
+            cur.next = prev
+            prev = cur
+            cur = _next
+        return prev
+        
+        https://leetcode.com/problems/reverse-linked-list/
